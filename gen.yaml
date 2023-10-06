@@ -9,7 +9,7 @@ generation:
   tagNamespacingDisabled: false
 java:
   version: 0.0.1
-  artifactID: Swagger-Petstore
+  artifactID: petstore
   companyEmail: info@mycompany.com
   companyName: My Company
   companyURL: www.mycompany.com
@@ -17,4 +17,4 @@ java:
   groupID: demo
   maxMethodParams: 0
   ossrhURL: https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/
-  projectName: Swagger-Petstore
+  projectName: petstore
