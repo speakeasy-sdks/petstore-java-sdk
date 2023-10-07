@@ -62,7 +62,7 @@ public class Application {
             SwaggerPetstore sdk = SwaggerPetstore.builder()
                 .build();
 
-            ListPetsRequest req = new ListPetsRequest() {{
+            ListPetsRequest req = new ListPetsRequest(){{
                 limit = 21453;
             }};            
 

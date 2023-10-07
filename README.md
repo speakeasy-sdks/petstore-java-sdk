@@ -7,19 +7,17 @@
 </div>
 
 <!-- Start SDK Installation -->
-# SDK Installation
+## SDK Installation
 
-## Gradle
+### Gradle
 
 ```groovy
-implementation 'com.demo.petstore:petstore:0.1.0'
+implementation 'com.demo.petstore:petstore:0.1.1'
 ```
 <!-- End SDK Installation -->
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
-
 ```java
 package hello.world;
 
@@ -46,10 +44,10 @@ public class Application {
 <!-- End SDK Example Usage -->
 
 <!-- Start SDK Available Operations -->
-# Available Resources and Operations
+## Available Resources and Operations
 
 
-## [pets](docs/sdks/pets/README.md)
+### [pets](docs/sdks/pets/README.md)
 
 * [createPets](docs/sdks/pets/README.md#createpets) - Create a pet
 * [listPets](docs/sdks/pets/README.md#listpets) - List all pets
@@ -57,8 +55,6 @@ public class Application {
 <!-- End SDK Available Operations -->
 
 <!-- Start Dev Containers -->
-
-
 
 <!-- End Dev Containers -->
 
