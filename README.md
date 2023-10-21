@@ -12,7 +12,7 @@
 ### Gradle
 
 ```groovy
-implementation 'com.demo.petstore:petstore:0.4.0'
+implementation 'com.demo.petstore:petstore:0.5.0'
 ```
 <!-- End SDK Installation -->
 
