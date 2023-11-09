@@ -12,7 +12,7 @@
 ### Gradle
 
 ```groovy
-implementation 'com.demo.petstore:petstore:0.6.0'
+implementation 'com.demo.petstore:petstore:0.6.1'
 ```
 <!-- End SDK Installation -->
 
@@ -47,7 +47,7 @@ public class Application {
 ## Available Resources and Operations
 
 
-### [.pets](docs/sdks/pets/README.md)
+### [pets](docs/sdks/pets/README.md)
 
 * [createPets](docs/sdks/pets/README.md#createpets) - Create a pet
 * [listPets](docs/sdks/pets/README.md#listpets) - List all pets

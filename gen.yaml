@@ -2,18 +2,18 @@ configVersion: 1.0.0
 management:
   docChecksum: 2516596125ef223fbbef6c434d22eaac
   docVersion: 1.0.0
-  speakeasyVersion: 1.114.1
-  generationVersion: 2.181.1
+  speakeasyVersion: 1.116.0
+  generationVersion: 2.185.0
 generation:
   comments: {}
   sdkClassName: Swagger-Petstore
   repoURL: https://github.com/speakeasy-sdks/petstore-java-sdk.git
 features:
   java:
-    core: 3.0.1
+    core: 3.0.2
     globalServerURLs: 2.82.0
 java:
-  version: 0.6.0
+  version: 0.6.1
   artifactID: petstore
   companyEmail: info@mycompany.com
   companyName: My Company
@@ -28,8 +28,10 @@ java:
       operations: models/operations
       shared: models/shared
       webhooks: models/webhooks
+  inputModelSuffix: input
   maxMethodParams: 0
   ossrhURL: https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/
+  outputModelSuffix: output
   projectName: petstore
   published: true
   repoSubDirectory: .
