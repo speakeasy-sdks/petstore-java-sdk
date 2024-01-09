@@ -1,6 +1,4 @@
-<!-- Start SDK Example Usage -->
-
-
+<!-- Start SDK Example Usage [usage] -->
 ```java
 package hello.world;
 
@@ -10,10 +8,9 @@ import com.demo.petstore.models.operations.CreatePetsResponse;
 public class Application {
     public static void main(String[] args) {
         try {
-            SwaggerPetstore sdk = SwaggerPetstore.builder()
-                .build();
+            SwaggerPetstore sdk = SwaggerPetstore.builder()            .build();
 
-            CreatePetsResponse res = sdk.pets.createPets();
+            com.demo.petstore.models.operations.CreatePetsResponse res = sdk.pets.createPets();
 
             if (res.statusCode == 200) {
                 // handle response
@@ -24,4 +21,4 @@ public class Application {
     }
 }
 ```
-<!-- End SDK Example Usage -->
+<!-- End SDK Example Usage [usage] -->

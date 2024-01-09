@@ -1,0 +1,66 @@
+lockVersion: 2.0.0
+id: 70ebefea-9a6e-4155-8c6a-a1a5d06a5654
+management:
+  docChecksum: 2516596125ef223fbbef6c434d22eaac
+  docVersion: 1.0.0
+  speakeasyVersion: internal
+  generationVersion: 2.230.1
+  releaseVersion: 0.7.0
+  configChecksum: 3460c432e3f6b8d310cba247524d2adc
+  repoURL: https://github.com/speakeasy-sdks/petstore-java-sdk.git
+  repoSubDirectory: .
+  published: true
+features:
+  java:
+    core: 3.2.2
+    globalServerURLs: 2.82.1
+generatedFiles:
+  - lib/src/main/java/com/demo/petstore/SDKConfiguration.java
+  - lib/src/main/java/com/demo/petstore/Pets.java
+  - lib/src/main/java/com/demo/petstore/SwaggerPetstore.java
+  - .gitattributes
+  - gradle/wrapper/gradle-wrapper.jar
+  - gradle/wrapper/gradle-wrapper.properties
+  - gradlew
+  - gradlew.bat
+  - lib/build.gradle
+  - lib/src/main/java/com/demo/petstore/utils/DateTimeDeserializer.java
+  - lib/src/main/java/com/demo/petstore/utils/DateTimeSerializer.java
+  - lib/src/main/java/com/demo/petstore/utils/FormMetadata.java
+  - lib/src/main/java/com/demo/petstore/utils/HTTPClient.java
+  - lib/src/main/java/com/demo/petstore/utils/HTTPRequest.java
+  - lib/src/main/java/com/demo/petstore/utils/HeaderMetadata.java
+  - lib/src/main/java/com/demo/petstore/utils/JSON.java
+  - lib/src/main/java/com/demo/petstore/utils/Metadata.java
+  - lib/src/main/java/com/demo/petstore/utils/MultipartFormMetadata.java
+  - lib/src/main/java/com/demo/petstore/utils/PathParamsMetadata.java
+  - lib/src/main/java/com/demo/petstore/utils/QueryParameters.java
+  - lib/src/main/java/com/demo/petstore/utils/QueryParamsMetadata.java
+  - lib/src/main/java/com/demo/petstore/utils/RequestBody.java
+  - lib/src/main/java/com/demo/petstore/utils/RequestMetadata.java
+  - lib/src/main/java/com/demo/petstore/utils/Security.java
+  - lib/src/main/java/com/demo/petstore/utils/SecurityMetadata.java
+  - lib/src/main/java/com/demo/petstore/utils/SerializedBody.java
+  - lib/src/main/java/com/demo/petstore/utils/SpeakeasyHTTPClient.java
+  - lib/src/main/java/com/demo/petstore/utils/SpeakeasyHTTPSecurityClient.java
+  - lib/src/main/java/com/demo/petstore/utils/SpeakeasyMetadata.java
+  - lib/src/main/java/com/demo/petstore/utils/Types.java
+  - lib/src/main/java/com/demo/petstore/utils/Utils.java
+  - settings.gradle
+  - lib/src/main/java/com/demo/petstore/models/operations/CreatePetsResponse.java
+  - lib/src/main/java/com/demo/petstore/models/operations/ListPetsRequest.java
+  - lib/src/main/java/com/demo/petstore/models/operations/ListPetsResponse.java
+  - lib/src/main/java/com/demo/petstore/models/operations/ShowPetByIdRequest.java
+  - lib/src/main/java/com/demo/petstore/models/operations/ShowPetByIdResponse.java
+  - lib/src/main/java/com/demo/petstore/models/shared/Error.java
+  - lib/src/main/java/com/demo/petstore/models/shared/Pet.java
+  - docs/models/operations/CreatePetsResponse.md
+  - docs/models/operations/ListPetsRequest.md
+  - docs/models/operations/ListPetsResponse.md
+  - docs/models/operations/ShowPetByIdRequest.md
+  - docs/models/operations/ShowPetByIdResponse.md
+  - docs/models/shared/Error.md
+  - docs/models/shared/Pet.md
+  - docs/sdks/swaggerpetstore/README.md
+  - docs/sdks/pets/README.md
+  - USAGE.md

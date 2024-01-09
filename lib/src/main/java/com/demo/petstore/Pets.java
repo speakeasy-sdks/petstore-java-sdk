@@ -42,11 +42,10 @@ public class Pets {
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
-
-        com.demo.petstore.models.operations.CreatePetsResponse res = new com.demo.petstore.models.operations.CreatePetsResponse(contentType, httpRes.statusCode()) {{
+        
+        com.demo.petstore.models.operations.CreatePetsResponse res = new com.demo.petstore.models.operations.CreatePetsResponse(contentType, httpRes.statusCode(), httpRes) {{
             error = null;
         }};
-        res.rawResponse = httpRes;
         
         if (httpRes.statusCode() == 201) {
         }
@@ -88,12 +87,11 @@ public class Pets {
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
-
-        com.demo.petstore.models.operations.ListPetsResponse res = new com.demo.petstore.models.operations.ListPetsResponse(contentType, httpRes.statusCode()) {{
+        
+        com.demo.petstore.models.operations.ListPetsResponse res = new com.demo.petstore.models.operations.ListPetsResponse(contentType, null, httpRes.statusCode(), httpRes) {{
             pets = null;
             error = null;
         }};
-        res.rawResponse = httpRes;
         
         if (httpRes.statusCode() == 200) {
             res.headers = httpRes.headers().map().keySet().stream().collect(Collectors.toMap(Function.identity(), k -> httpRes.headers().allValues(k).toArray(new String[0])));
@@ -136,12 +134,11 @@ public class Pets {
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
-
-        com.demo.petstore.models.operations.ShowPetByIdResponse res = new com.demo.petstore.models.operations.ShowPetByIdResponse(contentType, httpRes.statusCode()) {{
+        
+        com.demo.petstore.models.operations.ShowPetByIdResponse res = new com.demo.petstore.models.operations.ShowPetByIdResponse(contentType, httpRes.statusCode(), httpRes) {{
             pet = null;
             error = null;
         }};
-        res.rawResponse = httpRes;
         
         if (httpRes.statusCode() == 200) {
             if (com.demo.petstore.utils.Utils.matchContentType(contentType, "application/json")) {

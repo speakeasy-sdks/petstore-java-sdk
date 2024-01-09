@@ -22,10 +22,9 @@ import com.demo.petstore.models.operations.CreatePetsResponse;
 public class Application {
     public static void main(String[] args) {
         try {
-            SwaggerPetstore sdk = SwaggerPetstore.builder()
-                .build();
+            SwaggerPetstore sdk = SwaggerPetstore.builder()            .build();
 
-            CreatePetsResponse res = sdk.pets.createPets();
+            com.demo.petstore.models.operations.CreatePetsResponse res = sdk.pets.createPets();
 
             if (res.statusCode == 200) {
                 // handle response
@@ -59,14 +58,15 @@ import com.demo.petstore.models.operations.ListPetsResponse;
 public class Application {
     public static void main(String[] args) {
         try {
-            SwaggerPetstore sdk = SwaggerPetstore.builder()
-                .build();
+            SwaggerPetstore sdk = SwaggerPetstore.builder()            .build();
 
-            ListPetsRequest req = new ListPetsRequest(){{
+            com.demo.petstore.models.operations.ListPetsRequest req = new ListPetsRequest(
+){{
                 limit = 21453;
-            }};            
 
-            ListPetsResponse res = sdk.pets.listPets(req);
+            }};
+
+            com.demo.petstore.models.operations.ListPetsResponse res = sdk.pets.listPets(req);
 
             if (res.pets != null) {
                 // handle response
@@ -106,12 +106,12 @@ import com.demo.petstore.models.operations.ShowPetByIdResponse;
 public class Application {
     public static void main(String[] args) {
         try {
-            SwaggerPetstore sdk = SwaggerPetstore.builder()
-                .build();
+            SwaggerPetstore sdk = SwaggerPetstore.builder()            .build();
 
-            ShowPetByIdRequest req = new ShowPetByIdRequest("string");            
+            com.demo.petstore.models.operations.ShowPetByIdRequest req = new ShowPetByIdRequest(
+                "string");
 
-            ShowPetByIdResponse res = sdk.pets.showPetById(req);
+            com.demo.petstore.models.operations.ShowPetByIdResponse res = sdk.pets.showPetById(req);
 
             if (res.pet != null) {
                 // handle response
