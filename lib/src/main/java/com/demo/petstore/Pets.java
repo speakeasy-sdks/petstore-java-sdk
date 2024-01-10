@@ -7,6 +7,7 @@ package com.demo.petstore;
 import com.demo.petstore.utils.HTTPClient;
 import com.demo.petstore.utils.HTTPRequest;
 import com.demo.petstore.utils.JSON;
+import com.demo.petstore.utils.SerializedBody;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
@@ -24,16 +25,22 @@ public class Pets {
 
     /**
      * Create a pet
+     * @param request the request object containing all of the parameters for the API call
      * @return the response from the API call
      * @throws Exception if the API call fails
      */
-    public com.demo.petstore.models.operations.CreatePetsResponse createPets() throws Exception {
+    public com.demo.petstore.models.operations.CreatePetsResponse createPets(com.demo.petstore.models.shared.Pet request) throws Exception {
         String baseUrl = this.sdkConfiguration.serverUrl;
         String url = com.demo.petstore.utils.Utils.generateURL(baseUrl, "/pets");
         
         HTTPRequest req = new HTTPRequest();
         req.setMethod("POST");
         req.setURL(url);
+        SerializedBody serializedRequestBody = com.demo.petstore.utils.Utils.serializeRequestBody(request, "request", "json");
+        if (serializedRequestBody == null) {
+            throw new Exception("Request body is required");
+        }
+        req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json");
         req.addHeader("user-agent", this.sdkConfiguration.userAgent);

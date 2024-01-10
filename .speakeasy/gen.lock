@@ -1,12 +1,12 @@
 lockVersion: 2.0.0
 id: 70ebefea-9a6e-4155-8c6a-a1a5d06a5654
 management:
-  docChecksum: 2516596125ef223fbbef6c434d22eaac
+  docChecksum: 1bdb7a6f8bf3995d4b40475228403253
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.230.1
-  releaseVersion: 0.7.0
-  configChecksum: 3460c432e3f6b8d310cba247524d2adc
+  generationVersion: 2.230.3
+  releaseVersion: 0.7.1
+  configChecksum: 13460fae8ed934fe0af26b51510b03e8
   repoURL: https://github.com/speakeasy-sdks/petstore-java-sdk.git
   repoSubDirectory: .
   published: true
