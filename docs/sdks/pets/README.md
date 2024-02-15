@@ -27,8 +27,8 @@ public class Application {
 
             com.demo.petstore.models.shared.Pet req = new Pet(
                 596804L,
-                "string"){{
-                tag = "string";
+                "<value>"){{
+                tag = "<value>";
 
             }};
 
@@ -123,7 +123,7 @@ public class Application {
             SwaggerPetstore sdk = SwaggerPetstore.builder()            .build();
 
             com.demo.petstore.models.operations.ShowPetByIdRequest req = new ShowPetByIdRequest(
-                "string");
+                "<value>");
 
             com.demo.petstore.models.operations.ShowPetByIdResponse res = sdk.pets.showPetById(req);
 

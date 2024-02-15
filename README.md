@@ -12,7 +12,7 @@
 ### Gradle
 
 ```groovy
-implementation 'com.demo.petstore:petstore:0.7.1'
+implementation 'com.demo.petstore:petstore:0.8.0'
 ```
 <!-- End SDK Installation [installation] -->
 
@@ -35,8 +35,8 @@ public class Application {
 
             com.demo.petstore.models.shared.Pet req = new Pet(
                 596804L,
-                "string"){{
-                tag = "string";
+                "<value>"){{
+                tag = "<value>";
 
             }};
 

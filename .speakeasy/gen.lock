@@ -4,15 +4,15 @@ management:
   docChecksum: 1bdb7a6f8bf3995d4b40475228403253
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.230.3
-  releaseVersion: 0.7.1
-  configChecksum: 13460fae8ed934fe0af26b51510b03e8
+  generationVersion: 2.258.2
+  releaseVersion: 0.8.0
+  configChecksum: 914b643211478f9a7a62eac0f6610321
   repoURL: https://github.com/speakeasy-sdks/petstore-java-sdk.git
   repoSubDirectory: .
   published: true
 features:
   java:
-    core: 3.2.2
+    core: 3.5.1
     globalServerURLs: 2.82.1
 generatedFiles:
   - lib/src/main/java/com/demo/petstore/SDKConfiguration.java
@@ -23,6 +23,7 @@ generatedFiles:
   - gradle/wrapper/gradle-wrapper.properties
   - gradlew
   - gradlew.bat
+  - settings.gradle
   - lib/build.gradle
   - lib/src/main/java/com/demo/petstore/utils/DateTimeDeserializer.java
   - lib/src/main/java/com/demo/petstore/utils/DateTimeSerializer.java
@@ -46,7 +47,6 @@ generatedFiles:
   - lib/src/main/java/com/demo/petstore/utils/SpeakeasyMetadata.java
   - lib/src/main/java/com/demo/petstore/utils/Types.java
   - lib/src/main/java/com/demo/petstore/utils/Utils.java
-  - settings.gradle
   - lib/src/main/java/com/demo/petstore/models/operations/CreatePetsResponse.java
   - lib/src/main/java/com/demo/petstore/models/operations/ListPetsRequest.java
   - lib/src/main/java/com/demo/petstore/models/operations/ListPetsResponse.java
